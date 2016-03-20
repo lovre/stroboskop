@@ -3,7 +3,7 @@
 <head>
     <title>..:: Stroboskop ::..</title>
     <meta charset="UTF-8">
-    
+    <link rel="stylesheet" type="text/css" href="stili.css">
     <script src="skripta.js"></script>
 </head>
 <body>
@@ -12,21 +12,23 @@
 <!-- GLAVA -->
 <glava>
 	<table style="width: 100%;">
+		<script src="jscolor.js"></script>
 		<tr>
 			<td style="width: 200px;">
-				Izberi barve:
+				<p align="right">Izberi barve: </p> 
 			</td>
 			<td style="width: calc(100% - 20px);">
 				<span id="barve"></span> 
-				<input id="novaBarva" type="button" value="Dodaj barvo" />
+				<input class="rob senca" id="novaBarva" type="button" value="Dodaj barvo" />
+				<input class="rob senca" id="odstraniBarve" type="button" value="Odstrani brave" />
 			</td>
 			<td rowspan="2" style="width: 300px;">
-				<button id="start">Zaženi stroboskop</button>
+				<button class="rob senca" id="start">Zaženi stroboskop</button>
 			</td>
 		</tr>
 		<tr>
 			<td>
-				Časovni interval: 
+				<p align="right">Časovni interval: </p>
 			</td>
 			<td>
 				od najmanj <input id="min" value="50" /> ms do največ
@@ -38,7 +40,7 @@
 </glava>
 
 <!-- TELO -->
-<telo id="stroboskop"></telo>
+<telo class="rob senca" id="stroboskop"></telo>
 
 </body>
 </html>
